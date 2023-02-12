@@ -1,0 +1,11 @@
+.{
+    .name = "libvorbis",
+    .version = "1.3.7",
+
+    .dependencies = .{
+        .libogg = .{
+            .url = "https://github.com/andrewrk/libogg/archive/e685da55da27100e6a46a64f9a34d8577b5b53b6.tar.gz",
+            .hash = "122039060feeb8f7f63e6b02204df40f631184fece51a3e15110ac05c7640a7db529",
+        },
+    },
+}
