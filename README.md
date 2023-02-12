@@ -1,3 +1,11 @@
+This is a fork of [vorbis](https://github.com/xiph/vorbis), packaged for Zig.
+Unnecessary files have been deleted, and the build system has been replaced
+with `build.zig`.
+
+Original README follows:
+
+--------------------------------------------------------------------------------
+
 # Vorbis
 
 [![GitLab Build Status](https://gitlab.xiph.org/xiph/vorbis/badges/master/pipeline.svg)](https://gitlab.xiph.org/xiph/vorbis/-/pipelines)
