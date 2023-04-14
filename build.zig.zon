@@ -4,8 +4,8 @@
 
     .dependencies = .{
         .libogg = .{
-            .url = "https://github.com/andrewrk/libogg/archive/e685da55da27100e6a46a64f9a34d8577b5b53b6.tar.gz",
-            .hash = "122039060feeb8f7f63e6b02204df40f631184fece51a3e15110ac05c7640a7db529",
+            .url = "https://github.com/andrewrk/libogg/archive/9f514ae46e28589e47d25017385eb0d6ff4c7e9a.tar.gz",
+            .hash = "1220f96a4eaae5bad95ab9391431f125b7cc32edbd6d17397ce066d498f8fc9b63c2",
         },
     },
 }

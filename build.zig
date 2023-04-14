@@ -43,6 +43,6 @@ pub fn build(b: *std.Build) void {
         "lib/vorbisenc.c",
     }, &.{});
     lib.linkLibC();
-    lib.install();
     lib.installHeadersDirectory("include/vorbis", "vorbis");
+    b.installArtifact(lib);
 }
