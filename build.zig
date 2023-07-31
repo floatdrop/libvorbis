@@ -15,8 +15,8 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
     lib.linkLibrary(libogg_dep.artifact("ogg"));
-    lib.addIncludePath("include");
-    lib.addIncludePath("lib");
+    lib.addIncludePath(.{ .path = "include" });
+    lib.addIncludePath(.{ .path = "lib" });
     lib.addCSourceFiles(&.{
         "lib/analysis.c",
         "lib/bitrate.c",
