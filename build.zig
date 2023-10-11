@@ -17,31 +17,33 @@ pub fn build(b: *std.Build) void {
     lib.linkLibrary(libogg_dep.artifact("ogg"));
     lib.addIncludePath(.{ .path = "include" });
     lib.addIncludePath(.{ .path = "lib" });
-    lib.addCSourceFiles(&.{
-        "lib/analysis.c",
-        "lib/bitrate.c",
-        "lib/block.c",
-        "lib/codebook.c",
-        "lib/envelope.c",
-        "lib/floor0.c",
-        "lib/floor1.c",
-        "lib/info.c",
-        "lib/lookup.c",
-        "lib/lpc.c",
-        "lib/lsp.c",
-        "lib/mapping0.c",
-        "lib/mdct.c",
-        "lib/psy.c",
-        "lib/registry.c",
-        "lib/res0.c",
-        "lib/sharedbook.c",
-        "lib/smallft.c",
-        "lib/synthesis.c",
-        "lib/window.c",
+    lib.addCSourceFiles(.{
+        .files = &.{
+            "lib/analysis.c",
+            "lib/bitrate.c",
+            "lib/block.c",
+            "lib/codebook.c",
+            "lib/envelope.c",
+            "lib/floor0.c",
+            "lib/floor1.c",
+            "lib/info.c",
+            "lib/lookup.c",
+            "lib/lpc.c",
+            "lib/lsp.c",
+            "lib/mapping0.c",
+            "lib/mdct.c",
+            "lib/psy.c",
+            "lib/registry.c",
+            "lib/res0.c",
+            "lib/sharedbook.c",
+            "lib/smallft.c",
+            "lib/synthesis.c",
+            "lib/window.c",
 
-        "lib/vorbisfile.c",
-        "lib/vorbisenc.c",
-    }, &.{});
+            "lib/vorbisfile.c",
+            "lib/vorbisenc.c",
+        },
+    });
     lib.linkLibC();
     lib.installHeadersDirectory("include/vorbis", "vorbis");
     b.installArtifact(lib);
