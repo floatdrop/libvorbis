@@ -45,6 +45,6 @@ pub fn build(b: *std.Build) void {
         },
     });
     lib.linkLibC();
-    lib.installHeadersDirectory("include/vorbis", "vorbis");
+    lib.installHeadersDirectory(.{ .path = "include/vorbis" }, "vorbis", .{});
     b.installArtifact(lib);
 }
