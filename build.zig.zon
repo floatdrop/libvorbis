@@ -1,11 +1,12 @@
 .{
     .name = "libvorbis",
     .version = "1.3.8-2",
+    .minimum_zig_version = "0.12.0",
 
     .dependencies = .{
         .libogg = .{
-            .url = "https://github.com/andrewrk/libogg/archive/refs/tags/1.3.6-1.tar.gz",
-            .hash = "1220e920d74980c0794a969e1fc0647c863023acbe935ed244a79ff8ec65f2875023",
+            .url = "https://github.com/andrewrk/libogg/archive/refs/tags/1.3.6-2.tar.gz",
+            .hash = "1220b3e1fb33317c92f9ead09630f6b4be59e80d0a8780754f8aa4ee7da61cb7b47a",
         },
     },
     .paths = .{
